@@ -20,6 +20,161 @@ body {
   perspective: 1000px;
   padding: 50px 0px;
 }
+.subitulos{
+  position: fixed;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  height: 100%;
+}
+.estilo{
+  color: white;
+  opacity: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: entrada;
+  animation-play-state: paused;
+}
+.estilo:nth-child(1){
+  animation-delay: 182ms;
+  animation-duration: 3921ms;
+}
+.estilo:nth-child(2){
+  animation-delay: 4103ms;
+  animation-duration: 5358ms;
+}
+.estilo:nth-child(3){
+  animation-delay: 9461ms;
+  animation-duration: 5532ms;
+}
+.estilo:nth-child(4){
+  animation-delay: 16178ms;
+  animation-duration: 2592ms;
+}
+.estilo:nth-child(5){
+  animation-delay: 20154ms;
+  animation-duration: 3296ms;
+}
+.estilo:nth-child(6){
+  animation-delay: 25347ms;
+  animation-duration: 6304ms;
+}
+.estilo:nth-child(7){
+  animation-delay: 31651ms;
+  animation-duration: 2275ms;
+}
+.estilo:nth-child(8){
+  animation-delay: 33926ms;
+  animation-duration: 3927ms;
+}
+.estilo:nth-child(9){
+  animation-delay: 37853ms;
+  animation-duration: 4032ms;
+}.estilo:nth-child(10){
+  animation-delay: 41885ms;
+  animation-duration: 3985ms;
+}.estilo:nth-child(11){
+  animation-delay: 45870ms;
+  animation-duration: 2985ms;
+}.estilo:nth-child(12){
+  animation-delay: 48855ms;
+  animation-duration: 5308ms;
+}.estilo:nth-child(13){
+  animation-delay: 56415ms;
+  animation-duration: 21636ms;
+}.estilo:nth-child(14){
+  animation-delay: 80895ms;
+  animation-duration: 5485ms;
+}.estilo:nth-child(15){
+  animation-delay: 88696ms;
+  animation-duration: 5172ms;
+}.estilo:nth-child(16){
+  animation-delay: 96711ms;
+  animation-duration: 4988ms;
+}.estilo:nth-child(17){
+  animation-delay: 104648ms;
+  animation-duration: 5300ms;
+}.estilo:nth-child(18){
+  animation-delay: 112152ms;
+  animation-duration: 3602ms;
+}.estilo:nth-child(19){
+  animation-delay: 144169ms;
+  animation-duration: 2816ms;
+}.estilo:nth-child(20){
+  animation-delay: 147985ms;
+  animation-duration: 4160ms;
+}.estilo:nth-child(21){
+  animation-delay: 152145ms;
+  animation-duration: 1856ms;
+}.estilo:nth-child(22){
+  animation-delay: 154001ms;
+  animation-duration: 5871ms;
+}.estilo:nth-child(23){
+  animation-delay: 160872ms;
+  animation-duration: 1127ms;
+}.estilo:nth-child(24){
+  animation-delay: 161999ms;
+  animation-duration: 3905ms;
+}.estilo:nth-child(25){
+  animation-delay: 165904ms;
+  animation-duration: 2973ms;
+}.estilo:nth-child(26){
+  animation-delay: 169877ms;
+  animation-duration: 3951ms;
+}.estilo:nth-child(27){
+  animation-delay: 173928ms;
+  animation-duration: 2998ms;
+}.estilo:nth-child(28){
+  animation-delay: 176926ms;
+  animation-duration: 5124ms;
+}.estilo:nth-child(29){
+  animation-delay: 184357ms;
+  animation-duration: 21845ms;
+}
+.estilo:nth-child(30){
+  animation-delay: 208894ms;
+  animation-duration: 5996ms;
+}
+.estilo:nth-child(31){
+  animation-delay: 216622ms;
+  animation-duration: 5091ms;
+}
+.estilo:nth-child(32){
+  animation-delay: 224894ms;
+  animation-duration: 5580ms;
+}
+.estilo:nth-child(33){
+  animation-delay: 232630ms;
+  animation-duration: 11861ms;
+}
+.estilo:nth-child(34){
+  animation-delay: 247822ms;
+  animation-duration: 5126ms;
+}
+.show {
+  opacity: 0;
+}
+@keyframes entrada {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 100;
+  }
+  90%{
+    opacity: 100;
+  }
+  100%{
+    opacity: 0;
+  }
+}
 
 .night {
   position: fixed;
@@ -1396,4 +1551,15 @@ body {
 
 .not-loaded * {
   animation-play-state: paused !important;
+}
+.lettra{
+  position: fixed;
+  top: 90%;
+  left: 35%;
+  z-index: 99999;
+  font-weight: normal;
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  font-style: normal;
 }
